@@ -1,0 +1,20 @@
+{
+  "name": "getimg",
+  "version": "1.0.0",
+  "description": "批量保存图片",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mkdirp": "^0.5.1",
+    "readline-sync": "^1.4.9",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
