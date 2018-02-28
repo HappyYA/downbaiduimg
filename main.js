@@ -1,20 +1,22 @@
 const request = require('request');
-const cheerio = require('cheerio');
-const readLineSync = require('readline-sync');
 const fs = require('fs');
 const readline = require('readline');
-const rp = require('request-promise');
 const  mkdirp= require('mkdirp');
-const  path = require('path');
 const  async = require('async');
 const url = require('url');
+// const  path = require('path');
+// const rp = require('request-promise');
+// const cheerio = require('cheerio');
+// const readLineSync = require('readline-sync');
 
+/**
+ *
+ * 配置信息 后期可通过控制台动态配置
+ */
 let options = {
-  keyWord:"猫",
-  maxDown:3
+  keyWord:"猫", // 用于自定义文件标识
+  maxDown:3  // 最大并行下载量
 };
-
-
 
 //百度图片解密函数
 let jiemi = (function () {
